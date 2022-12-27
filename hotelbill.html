@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <script>
+    function generate_bill() {
+    var Latte;
+    var Cappuccino;
+    var Americano
+    var Espresso;
+    var Mocha;
+    var masala_chai;
+    var green_tea;
+    var nilgiri_tea;
+    var black_tea;
+    var sum;
+    Latte = parseInt(document.getElementById("qty1").value);
+    Cappuccino = parseInt(document.getElementById("qty2").value);
+    Americano = parseInt(document.getElementById("qty3").value);
+    Espresso = parseInt(document.getElementById("qty4").value);
+    Mocha= parseInt(document.getElementById("qty5").value);
+    masala_chai = parseInt(document.getElementById("qty6").value);
+    green_tea = parseInt(document.getElementById("qty7").value);
+    nilgiri_tea = parseInt(document.getElementById("qty8").value);
+    black_tea= parseInt(document.getElementById("qty9").value);
+
+    sum = (Latte * 235) + (Cappuccino * 149) + (Americano * 500) + (Espresso * 500) +
+    (Mocha * 380) + (masala_chai * 50 ) + (green_tea * 60) + (nilgiri_tea * 90) + (black_tea * 120);
+    
+    name = document.getElementById("fname").value;
+    document.getElementById("total_cost").innerHTML = name + " " + "Bill :" +"Rs."+ sum;
+    
+        }
+function submit(){
+    alert("Your details has been updated. Visit us again😁")
+  }
+    </script>
+    <h1 class="heading">Coffee </h1>
+    <h1 class = "heading"> <span class = "cafe">cafe</span></h1>
+    <p class="qts">Choose your coffee</p>
+    <table class="coffee">
+        <tr>
+        <th>Coffee Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        </tr>
+        <tr>
+            <td data-th = "title">Latte</td>
+            <td data-th = "price">Rs. 235</td>
+            <td data-th = "quantity"><input type = "number" id = "qty1" value = "0" placeholder="Enter the quantity"/></td>
+        </tr>
+        <tr>
+            <td data-th = "title">Cappuccino</td>
+            <td data-th = "price">Rs. 149</td>
+            <td data-th = "quantity"><input type = "number" id = "qty2" value = "0" placeholder="Enter the quantity"/></td>
+        </tr>
+        <tr>
+            <td data-th = "title">Americano</td>
+            <td data-th = "price">Rs. 500</td>
+            <td data-th = "quantity"><input type = "number" id = "qty3" value = "0" placeholder="Enter the quantity"/></td>
+        </tr>
+        <tr>
+            <td data-th = "title">Espresso</td>
+            <td data-th = "price">Rs. 350</td>
+            <td data-th = "quantity"><input type = "number" id = "qty4" value = "0" placeholder="Enter the quantity"/></td>
+        </tr>
+        <tr>
+            <td data-th = "title">Mocha</td>
+            <td data-th = "price">Rs. 380</td>
+            <td data-th = "quantity"><input type = "number" id = "qty5" value = "0" placeholder="Enter the quantity"/></td>
+        </tr>
+    </table>
+    <p class = "qts">Choose your tea</p>
+    <table class="tea">
+        <tr>
+        <th>Tea Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        </tr>
+        <tr>
+            <tr>
+                <td data-th = "title">Masala chai</td>
+                <td data-th = "price">Rs. 50</td>
+                <td data-th = "quantity"><input type = "number" id = "qty6" value = "0" placeholder="Enter the quantity"/></td>
+            </tr>
+            <tr>
+                <td data-th = "title">Green Tea</td>
+                <td data-th = "price"> Rs. 60 </td>
+                <td data-th = "quantity"><input type = "number" id = "qty7" value = "0" placeholder="Enter the quantity"/></td>
+            </tr>
+            <tr>
+                <td data-th = "title">Nilgiri tea</td>
+                <td data-th = "price">Rs. 90</td>
+                <td data-th = "quantity"><input type = "number" id = "qty8" value = "0" placeholder="Enter the quantity"/></td>
+            </tr>
+            <tr>
+                <td data-th = "title">Black tea</td>
+                <td data-th = "price">Rs. 120</td>
+                <td data-th = "quantity"><input type = "number" id = "qty9" value = "0" placeholder="Enter the quantity"/></td>
+            </tr>
+        </tr>
+    </table> <br>
+    <label for = "name"> Hey 👋, What's your name? </label> <br>
+    <input type="text" id="fname" name="fname">
+
+    <!-- <p><b>What's your payment mode ?</b></p>
+    <input type="radio" id = "pmode" name="pmode"> 
+    <label for = "card">Card</label>
+    <br>
+    <input type="radio" id = "pmode" name="pmode"> 
+    <label for = "cash">Cash</label>
+    <br>
+    <input type="radio" id = "pmode" name="pmode"> 
+    <label for = "upi">UPI</label> -->
+    <br>
+    <button onclick="submit()" class="button">Submit Details</button>
+
+    <p class = "generate_bill"> Generate your bill </p>
+
+    <button onclick="generate_bill()" class="button">Generate Bill </button>
+
+    <div class = "result" id = "total_cost">Your bill will be generated here</div>
+
+ 
+</body>
+</html>

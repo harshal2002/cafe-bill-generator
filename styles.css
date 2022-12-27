@@ -1,0 +1,50 @@
+.heading{
+    color : brown;
+}
+.coffee, .tea{
+    
+        background: #3C2A21;
+        color: #fff;
+        border-radius: .4em;
+        overflow: hidden;
+      
+}
+body{
+    background-color: #FFEBB7;
+    background-image: url(https://digitalforge.qa/images/codepen/coffee.png), url(https://digitalforge.qa/images/codepen/bg.png);
+    background-position: center, left top;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+}
+.qts{
+    display: table; /*keep the background color wrapped tight*/
+    /* margin: auto; keep the table centered */
+    padding:5px;
+    font-size:20px;
+    background-color: #D5CEA3;
+    border : 2px brown dotted;
+    color: black;
+}
+.button{
+    background-color : #6E4D33;
+    margin : 4px 2px;
+    font-size : 20px;
+}
+.button:hover{
+    background-color: white;
+    
+}
+.cafe{
+    writing-mode: vertical-rl; 
+}
+.result{
+    background-color: #D0B8A8;
+    color: brown;
+    padding: 15px 32px;
+    font-size: 20px;
+    margin: 4px 2px;
+    width: 304px;
+    height: 50px;
+    display:block;
+    border : 2px solid brown;
+}
