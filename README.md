@@ -1,4 +1,6 @@
 # cafe-bill-generator
+https://codepen.io/harshal_jadhav619/pen/ExpPxJL
+
 Select your favourite coffee or tea and check the bill that is generated
 ![Screenshot (427)](https://user-images.githubusercontent.com/76609079/209697773-fa58382a-a0b9-4c2b-b26e-20cc180b4967.png)
 
